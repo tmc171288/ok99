@@ -5,6 +5,44 @@
   <meta charset='UTF-8'/>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+  <script type='text/javascript'>
+    //<![CDATA[
+    (function() {
+      function scaleWrapper() {
+        var wrapper = document.querySelector('.ladi-wraper');
+        if (!wrapper) return;
+        var screenWidth = window.innerWidth;
+        
+        if (screenWidth < 480) {
+          var ratio = screenWidth / 320;
+          wrapper.style.transform = 'scale(' + ratio + ')';
+          wrapper.style.transformOrigin = 'top center';
+          
+          var container = document.querySelector('.app-container');
+          if (container) {
+            container.style.height = (708.9 * ratio) + 'px';
+            container.style.minHeight = (708.9 * ratio) + 'px';
+            container.style.padding = '0';
+          }
+        } else {
+          wrapper.style.transform = 'none';
+          wrapper.style.transformOrigin = 'initial';
+          var container = document.querySelector('.app-container');
+          if (container) {
+            container.style.height = 'auto';
+            container.style.minHeight = '100vh';
+            container.style.padding = '20px 0';
+          }
+        }
+      }
+      
+      window.addEventListener('DOMContentLoaded', scaleWrapper);
+      window.addEventListener('load', scaleWrapper);
+      window.addEventListener('resize', scaleWrapper);
+      setTimeout(scaleWrapper, 0);
+    })();
+    //]]>
+  </script>
   
   <!-- SEO Meta Tags -->
   <title>OK9 ROBIN</title>
@@ -42,41 +80,154 @@
       min-height: 100vh;
     }
 
-    /* App Container for Centering on Desktop */
-    .app-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      min-height: 100vh;
-      background: radial-gradient(circle at 50% 50%, #16241a 0%, #090e15 100%);
-      padding: 20px 0;
-    }
-
-    @media (max-width: 480px) {
-      .app-container {
-        padding: 0;
-        background: #000;
-      }
-    }
-
-    /* Ladi Wrapper - Fixed Width 320px */
+    /* Ladi Wrapper - Fixed Width 320px centered on screen */
     .ladi-wraper {
       position: relative;
       width: 320px;
       height: 708.9px;
       background-color: #000;
       overflow: hidden;
+      margin: 40px auto;
       box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8), 0 0 20px rgba(16, 121, 61, 0.15);
       border-radius: 16px;
     }
 
     @media (max-width: 480px) {
+      body {
+        background-color: #000;
+      }
+
       .ladi-wraper {
+        width: 100vw;
+        height: calc(100vw * (708.9 / 320));
+        margin: 0;
         border-radius: 0;
         box-shadow: none;
+      }
+
+      #IMAGE2 {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+      }
+
+      #BUTTON_SUPPORT {
+        width: 12.5%;
+        height: 4.514%;
+        top: 0.352%;
+        left: 46.25%;
+      }
+
+      .support-icon-svg {
+        width: 57.5%;
+        height: 71.8%;
+      }
+
+      #BUTTON19 {
+        width: 23.4375%;
+        height: 3.667%;
+        top: 1.34%;
+        left: 58.4375%;
+      }
+
+      #BUTTON19 .ladi-headline {
+        font-size: 3.4vw;
+      }
+
+      #BUTTON20 {
+        width: 18.75%;
+        height: 3.667%;
+        top: 1.34%;
+        left: 80.625%;
+      }
+
+      #BUTTON20 .ladi-headline {
+        font-size: 3.4vw;
+      }
+
+      /* POPUP MODAL RESPONSIVE */
+      #SECTION_POPUP {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
         height: 100vh;
-        min-height: 100vh;
+        z-index: 100;
+        display: none;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #POPUP1 {
+        position: relative;
+        width: 90vw;
+        height: calc(90vw * (474.456 / 318));
+        transform: scale(0.9);
+        opacity: 0;
+        transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
+        margin: 0 auto;
+      }
+
+      #IMAGE3 {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+      }
+
+      #FORM2 {
+        width: 85%;
+        height: 29.3%;
+        left: 7.5%;
+        top: 44.8%;
+      }
+
+      #FORM_ITEM2 {
+        width: 100%;
+        height: 15.8%;
+        top: 0;
+        left: 0;
+      }
+
+      #FORM_ITEM6 {
+        width: 100%;
+        height: 15.8%;
+        top: 23%;
+        left: 0;
+      }
+
+      #FORM_ITEM4 {
+        width: 100%;
+        height: 15.8%;
+        top: 46.7%;
+        left: 0;
+      }
+
+      .ladi-form-control {
+        font-size: 3.4vw;
+      }
+
+      .ladi-form-control::placeholder {
+        font-size: 3.4vw;
+      }
+
+      #BUTTON18 {
+        width: 100%;
+        height: 20.8%;
+        top: 79.1%;
+        left: 0;
+      }
+
+      #BUTTON18 .ladi-headline {
+        font-size: 4.1vw;
+      }
+
+      .popup-close {
+        width: 6.3vw;
+        height: 6.3vw;
+        right: 3.8vw;
+        top: 3.8vw;
       }
     }
 
