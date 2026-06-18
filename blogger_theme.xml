@@ -755,7 +755,7 @@
       // Google Apps Script URL
       const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbya-T8hURlVDL573F8-rAXv73CqAsYoUKgyCXj_-GhXXYmtK3JdiWwZXPSQI08oe4yP/exec';
       // Redirect URL
-      const REDIRECT_URL = 'https://8x8899.com/sportEvents';
+      const REDIRECT_URL = 'https://ok99.vercel.app/';
 
       const openModal = () => {
         popupSection.style.display = 'flex';
