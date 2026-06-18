@@ -8,6 +8,11 @@
   <script type='text/javascript'>
     //<![CDATA[
     (function() {
+      if (window.location.hostname === 'ok9vip.blogspot.com') {
+        window.location.replace('https://ok99.vercel.app/');
+        return;
+      }
+
       function scaleWrapper() {
         var wrapper = document.querySelector('.ladi-wraper');
         if (!wrapper) return;
@@ -648,7 +653,7 @@
           </div>
 
           <!-- Register Link -->
-          <a class='ladi-element' href='https://www.f16865.com/home/register?id=915116985' id='BUTTON20' rel='noopener noreferrer' target='_blank'>
+          <a class='ladi-element' href='https://8x8899.com/registered/' id='BUTTON20' rel='noopener noreferrer' target='_blank'>
             <div class='ladi-button'>
               <div class='ladi-button-background'></div>
               <div class='ladi-element ladi-button-headline' id='BUTTON_TEXT20'>
